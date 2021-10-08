@@ -12,7 +12,7 @@
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   --ff-title: serif;
   --title-fs: clamp(2rem, 8vw, 3rem);
-  --fs-hero-title: clamp(4.5rem, 10vw, 6.5rem);
+  --fs-hero-title: clamp(3.8rem, 10vw, 6.5rem);
   --clr-white: white;
   --clr-yellow: hsl(51, 100%, 49%);
   --clr-red: hsl(7, 99%, 70%);
