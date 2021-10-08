@@ -1,0 +1,106 @@
+//! ----------reseted-valuse----------
+
+*,
+*::before,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//! ----------imported-fonts----------
+
+//? I do'N hAva A iNterNEt ToT
+
+//! ----------custome-varables---------
+
+:root {
+    //! ----font-family----
+
+    --ff-txt-and-log: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    --ff-title: serif;
+
+    //! ----font-size----
+    --title-fs: clamp(2rem, 8vw, 3rem);
+    --fs-hero-title: clamp(4.5rem, 10vw, 6.5rem);
+
+    //! ----colors----
+
+    --clr-white: white;
+    --clr-yellow: hsl(51, 100%, 49%);
+
+    --clr-red: hsl(7, 99%, 70%);
+    --clr-title-900: hsl(212, 27%, 19%);
+    --clr-txt-400: hsl(213, 9%, 39%);
+    --clr-txt-300: hsl(232, 10%, 55%);
+    --clr-itmes-500: hsl(167, 40%, 24%);
+    --clr-itmes-400: hsl(198, 62%, 26%);
+    --clr-footer-bg: hsl(167, 44%, 70%);
+    --clr-footer-txt: hsl(168, 34%, 41%);
+    --clr-footer-logo: hsl(168, 45%, 32%);
+}
+
+//! ----------controled-tags----------
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+//! ----------utility-classes----------
+
+.width-1200px {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--ff-txt-and-log);
+}
+
+.txt {
+    color: var(--clr-txt-400);
+    font-family: var(--ff-txt-and-log);
+    font-size: 1.1rem;
+}
+
+.title {
+    font-family: var(--ff-title);
+    font-size: var(--title-fs);
+}
+
+.btn {
+    position: relative;
+    color: var(--clr-title-900);
+    font-size: 1.2rem;
+    font-family: var(--ff-title);
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+}
+
+.btn::after {
+    content: "";
+    height: 12px;
+    position: absolute;
+    left: -10%;
+    right: -10%;
+    bottom: -50%;
+    z-index: -1;
+    transform: translateY(-50%);
+    background-color: var(--clr-yellow);
+    border-radius: 100rem;
+    opacity: 0.35;
+}
